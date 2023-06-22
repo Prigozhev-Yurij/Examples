@@ -19,15 +19,40 @@
 // a = 9, b = -3 -> да 
 // a = -3 b = 9 -> нет
 
-Console.Write("Введите первое число: ");
-int firstDigit = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число: ");
-int secondDigit = Convert.ToInt32(Console.ReadLine());
-if (firstDigit == secondDigit * secondDigit)
+// Console.Write("Введите первое число: ");
+// int firstDigit = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int secondDigit = Convert.ToInt32(Console.ReadLine());
+// if (firstDigit == secondDigit * secondDigit)
+// {
+//     Console.WriteLine("Число " + firstDigit + " является квадратом от числа " + secondDigit);
+// }
+// else
+// {
+//     Console.WriteLine("Число " + firstDigit + " не является квадратом от числа " + secondDigit);
+// }
+
+// Напишите программу, которая на вход принимает одно число (N),
+//  а на выходе показывает все целые числа в промежутке от -N до N.
+// 4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4" 
+// 2 -> " -2, -1, 0, 1, 2"
+
+Console.Write("Введите число: ");
+int numder = Convert.ToInt32(Console.ReadLine());
+int negative = numder * (-1);
+if (numder > 0)
 {
-    Console.WriteLine("Число " + firstDigit + " является квадратом от числа " + secondDigit);
+    while (negative <= numder)
+    {   
+        Console.WriteLine(negative);
+        negative ++;
+    }
 }
 else
 {
-    Console.WriteLine("Число " + firstDigit + " не является квадратом от числа " + secondDigit);
+    while (negative >= numder)
+    {
+        Console.WriteLine(negative);
+        negative --;
+    }
 }
