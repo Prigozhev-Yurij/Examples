@@ -1,4 +1,7 @@
-﻿//Напишите программу, которая на вход принимает 
+﻿//On Windows Shift + Alt + F
+//On Mac Shift + Option + F
+//On Linux Ctrl + Shift + I
+//Напишите программу, которая на вход принимает 
 // число и выдаёт его квадрат (число умноженное на само себя).
 // Например:
 // 4 -> 16 
@@ -39,20 +42,23 @@
 
 Console.Write("Введите число: ");
 int numder = Convert.ToInt32(Console.ReadLine());
+
+if (numder < 0)
+{
+    numder = numder * (-1);
+}
 int negative = numder * (-1);
-if (numder > 0)
+while (negative <= numder)
 {
-    while (negative <= numder)
-    {   
-        Console.WriteLine(negative);
-        negative ++;
-    }
+    Console.WriteLine(negative);
+    negative++;
 }
-else
-{
-    while (negative >= numder)
-    {
-        Console.WriteLine(negative);
-        negative --;
-    }
-}
+
+// else
+// {
+//     while (negative >= numder)
+//     {
+//         Console.WriteLine(negative);
+//         negative --;
+//     }
+// }
