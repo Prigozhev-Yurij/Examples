@@ -1,24 +1,24 @@
-﻿Console.WriteLine("Введите первое число: ");
+﻿Console.Write("Введите первое число: ");
 int firstDigit = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
+Console.Write("Введите второе число: ");
 int secondDigit = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите третье число: ");
+Console.Write("Введите третье число: ");
 int thirdDigit = Convert.ToInt32(Console.ReadLine());
 if (firstDigit == secondDigit)
 {
     if (secondDigit == thirdDigit)
     {
-        Console.WriteLine("Числа равны");
+        Console.Write("Числа равны");
     }
     else
     {
         if (secondDigit > thirdDigit)
         {
-            Console.WriteLine("Максимальное число " + secondDigit);
+            Console.Write("Максимальное число " + secondDigit);
         }
         else
         {
-            Console.WriteLine("Максимальное число " + thirdDigit);
+            Console.Write("Максимальное число " + thirdDigit);
         }
     }
 }
@@ -28,22 +28,22 @@ else
     {
         if (firstDigit > thirdDigit)
         {
-            Console.WriteLine("Максимальное число " + firstDigit);
+            Console.Write("Максимальное число " + firstDigit);
         }
         else
         {
-            Console.WriteLine("Максимальное число " + thirdDigit);
+            Console.Write("Максимальное число " + thirdDigit);
         }
     }
     else
     {
         if (secondDigit > thirdDigit)
         {
-            Console.WriteLine("Максимальное число " + secondDigit);
+            Console.Write("Максимальное число " + secondDigit);
         }
         else
         {
-            Console.WriteLine("Максимальное число " + thirdDigit);
+            Console.Write("Максимальное число " + thirdDigit);
         }
     }
 }

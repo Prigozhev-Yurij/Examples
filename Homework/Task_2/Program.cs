@@ -1,10 +1,10 @@
-﻿Console.WriteLine("Введите первое число: ");
+﻿Console.Write("Введите первое число: ");
 int firstDigit = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
+Console.Write("Введите второе число: ");
 int secondDigit = Convert.ToInt32(Console.ReadLine());
 if (firstDigit == secondDigit)
 {
-    Console.WriteLine("Числа равны");
+    Console.Write("Числа равны");
 }
 else
 {

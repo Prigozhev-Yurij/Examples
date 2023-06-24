@@ -1,10 +1,10 @@
-﻿Console.WriteLine("Введите число: ");
+﻿Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 if (num % 2 == 0)
 {
-    Console.WriteLine("Число чётное");
+    Console.Write("Число чётное");
 }
 else
 {
-    Console.WriteLine("Число нечётное");
+    Console.Write("Число нечётное");
 }
